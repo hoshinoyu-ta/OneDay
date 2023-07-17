@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
+
+#title{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    font-size: 10vw;
+}
+
+/* ボタン装飾 */
+#home,#submit-i{
+    width: 10%;
+    padding: 1%;
+    margin-top: 3%;
+    margin-left: 3%;
+    font-size: 15px;
+    font-family: 'Zen Kurenaido', sans-serif;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#home:hover,#submit-i:hover{
+    background-color: rgb(63, 60, 60);
+    color: white;
+}
+
+h1{
+    font-family: 'Zen Kurenaido', sans-serif;
+    text-align: center;
+}
+
+form{
+    text-align: center;
+}
+
+#pwd,#submit{
+    margin-top:4%;
+}
+
+input{
+    border: none;
+    outline: none;
+    width: 200px;
+    border-bottom: 2px solid black;
+    padding-bottom: 1%;
+}
+
+.error{
+    color: crimson;
+    font-family: 'Zen Kurenaido', sans-serif;
+}

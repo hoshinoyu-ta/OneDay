@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
+
+body{
+    text-align: center;
+}
+header{
+    text-align: left;
+}
+/* リンクデザイン */
+a{
+    text-decoration: none;
+}
+a:visited{
+    color: black;
+}
+
+#title{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    font-size: 10vw;
+}
+
+#home:hover,#register:hover{
+    background-color: rgb(63, 60, 60);
+    color: white;
+}
+
+#home{
+    width: 10%;
+    padding: 1%;
+    margin-top: 3%;
+    margin-left: 3%;
+    font-size: 15px;
+    font-family: 'Zen Kurenaido', sans-serif;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+h1{
+    font-family: 'Zen Kurenaido', sans-serif;
+    text-align: center;
+}
+
+#book{
+    position: relative;
+}
+
+#record{
+    width: 70%;
+    transform:rotate(-0deg);
+}
+
+#textarea{
+    /* position: absolute; */
+    top: 45%;
+    left: 22%;
+    /* transform: rotate(-2deg); */
+}
+
+/* #textarea p{
+    text-align: left;
+} */
+#write{
+    border-radius: 20px;
+}
+
+#register{
+    font-size: 15px;
+    font-family: 'Zen Kurenaido', sans-serif;
+    width: 10%;
+    padding: 1%;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.memo{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightgray;
+    font-family: 'Zen Kurenaido', sans-serif;
+    border-radius: 15px;
+    width: 55%;
+}
+
