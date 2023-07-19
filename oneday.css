@@ -1,24 +1,19 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
 body{
     margin: 0px;
     background-color: rgb(255, 255, 255);
 }
-
 header p{
     text-align: center;
     font-family: 'Zen Kurenaido', sans-serif;
 }
-
 a{
     text-decoration: none;
 }
-
 a:visited{
     color: black;
 }
-
 #title{
     margin-top: 0px;
     margin-bottom: 0px;
@@ -26,7 +21,6 @@ a:visited{
     font-family: 'Amatic SC', cursive;
     font-size: 10vw;
 }
-
 /* ログイン・新規登録機能 */
 #login,#sign,#logout{
     margin-top: 3%;
@@ -37,30 +31,23 @@ a:visited{
     border: none;
     cursor: pointer;
 }
-
 #signup{
     text-align: right;
     margin-right: 30px;
 }
-
 /* divレイアウト */
 img{
     display: inline-block;
 }
-
 #img2{
     margin-top: 5%;
 }
-
-/* モノクロ版・カラー版サイズ指定 */
 /* DIV1 */
-
 /* 窓 */
 #window{
     width: 23%;
     margin-left: 5%;
 }
-
 /* カレンダー */
 #calendar{
     width: 8%;
@@ -68,55 +55,43 @@ img{
     margin-top: 3%;
     
 }
-
 /* 照明 */
 #light{
     width: 8%;
     margin-left: 6%;
 }
-
 /* 時計 */
 #clock{
     width: 8%;
     margin-left: 5%;
 }
-
 /* 絵画 */
 #wall1{
     width: 20%;
     margin-left: 7%;
 }
-
 /* DIV2 */
 #leaf1{
-    width: 6%;
+    width: 5%;
 }
-
 #leaf2{
-    width: 9%;
+    width: 7%;
 }
 #cloud{
-    width: 7%;
+    width: 12%;
     margin-bottom: 20%;
 }
-
 /* 人 */
 #person1,#person2{
-    width: 10%;
+    width: 9%;
 }
-
-
 /* ソファー */
 #sofa1{
     width: 35%;
-    
 }
 #tv{
-    width: 15%;
+    width: 13%;
 }
-
-
-
 /* 記録 */
 #event{
     font-size: 120%;
@@ -130,31 +105,24 @@ img{
     border: none;
     cursor: pointer;
 }
-
 #login:hover,#sign:hover,#logout:hover{
     background-color: rgb(63, 60, 60);
     color: white;
     text-decoration:none;
 }
-
 #event:hover ~ #book{
     transform: scale(1.3,1.3);
     transition: 0.2s;
 }
-
-
-
 #calendar:hover,#cloud:hover{
     animation-name: shake;
     animation-delay: 0s;
     animation-duration: 1s;
     animation-iteration-count: infinite;
 }
-
 #calendar:hover ~ #text{
     animation-name: text;
 }
-
 /* アニメーション */
 @keyframes shake{
     0% {transform: translate(0px, 0px) rotateZ(0deg)}
@@ -163,13 +131,11 @@ img{
     75% {transform: translate(10px, 10px) rotateZ(-10deg)}
     100% {transform: translate(0px, 0px) rotateZ(0deg)}
 }
-
 @keyframes text{
     0%{opacity: 0;}
     50%{opacity: 0.5;}
     100%{opacity: 1;}
 }
-
 /* 背景文 */
 #reason{
     margin-left: auto;

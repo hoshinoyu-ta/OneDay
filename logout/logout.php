@@ -8,7 +8,7 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/webapp/oneday.css">
+    <link rel="stylesheet" href="/webapp/logout/oneday.css">
     <title>One Day</title>
 </head>
 <body>

@@ -53,7 +53,7 @@ if($_SERVER['REQUEST_METHOD']==='POST'){
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/webapp/app/register.css">
+    <link rel="stylesheet" href="/webapp/register/register.css">
     <title>新規登録</title>
 </head>
 <body>
@@ -85,7 +85,6 @@ if($_SERVER['REQUEST_METHOD']==='POST'){
                 <input type="email" name="email" id="email" placeholder="e-mail" value="<?php echo h($form['email']);?>">
                     <?php if (isset($error['email']) && $error['email']==='blank'): ?>
                         <p class="error">*メールアドレスを入力してください</p>
-                        <p class="error">*指定したメールアドレスはすでに登録されています。</p>
                     <?php endif; ?>
             </div>
             <div id="submit">

@@ -50,7 +50,7 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/webapp/app/login.css">
+    <link rel="stylesheet" href="/webapp/login/login.css">
     <title>ログイン</title>
 </head>
 <body>
