@@ -50,7 +50,7 @@ img{
 }
 /* カレンダー */
 #calendar{
-    width: 8%;
+    width: 6%;
     margin-left: 4%;
     margin-top: 3%;
     
@@ -143,4 +143,5 @@ img{
     margin-top: 70px;
     margin-bottom: 100px;
     text-align: center;
+    font-family: 'Zen Kurenaido', sans-serif;
 }

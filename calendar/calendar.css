@@ -11,11 +11,9 @@
         font-family: 'Amatic SC', cursive;
         font-size: 10vw;
     }
-
     #header{
         font-size: 120%;
     }
-
     #home,#prev,#next{
         width: 10%;
         padding: 1%;
@@ -27,44 +25,38 @@
         border: none;
         cursor: pointer;
     }
-
     #home:hover{
         background-color: rgb(63, 60, 60);
         color: white;
     }
-
     .wrapper{
         text-align: center;
         font-size: 3vw;
         color: #7d7272;
         font-family: 'Zen Kurenaido', sans-serif;
     }
-
     /*カレンダー*/
     #calendar{
         text-align: center;
         font-family: 'Zen Kurenaido', sans-serif;
+        font-size:15px;
         margin: 0 auto; 
         width: 75%;
     }
-
     table{
         outline: 2px solid #ddd;
         border-collapse: collapse;
         width: 100%;
     }
-
     th{
         color: #000;
     }
-
     th,td{
         outline: 1px solid #ddd;
         padding-top: 10px;
         padding-bottom: 10px;
         text-align: center;
     }
-
     /*日曜日*/
     td:first-child{
         color: red;
@@ -82,9 +74,9 @@
         background-color: #D65E72;
         color: #fff;
     }
-    td {
+    /* td {
         display: table-cell;
-    }
+    } */
     /*ボタン*/
     #next-prev-button button:hover{
     background-color:black;
@@ -109,39 +101,11 @@
         background-color:#c9c4c4;
     }
     td.event {
-        /* position: relative; */
         cursor: pointer;
     }
     .event-text {
-        display: none;
+        /* display: none; */
         font-size: small;
         color: black;
     }
-
-    
-    /* td.event::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba(0, 0, 0, 0.5);
-        opacity: 0;
-        transition: opacity 0.3s ease;
-    }
-    td.event:hover::before {
-        opacity: 1;
-    }
-    
-    td.event:hover::after {
-        content: attr(data-text);
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 14px;
-        color: #fff;
-        white-space: nowrap;
-    } */
 

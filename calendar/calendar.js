@@ -80,20 +80,7 @@ for (let i = 0; i < row; i++) {
           eventDate.getDate() === cellDate.getDate()
         );
       });
-
-      // if (year == today.getFullYear() && month == today.getMonth() && count == today.getDate()) {
-      //   calendar += "<td class='today'>" + count + "</td>";
-      // } else if (eventsOnDate.length > 0) {
-      //   // イベントがある場合は、すべてのイベントを表示する
-      //   calendar += "<td class='event'>" + count + "<br>";
-      //   for (let k = 0; k < eventsOnDate.length; k++) {
-      //     const event = eventsOnDate[k];
-      //     calendar += "<span class='event-text'>" + event.text + "</span><br>";
-      //   }
-      //   calendar += "</td>";
-      // } else {
-      //   calendar += "<td>" + count + "</td>";
-      // }
+      // 当日のイベント
       if (year == today.getFullYear() && month == today.getMonth() && count == today.getDate()) {
         calendar += "<td class='today'>" + count + "<br>";
         for (let k = 0; k < eventsOnDate.length; k++) {
@@ -103,10 +90,10 @@ for (let i = 0; i < row; i++) {
         calendar += "</td>";
       } else if (eventsOnDate.length > 0) {
         // イベントがある場合は、すべてのイベントを表示する
-        calendar += "<td class='event'>" + count + "<br>";
+        calendar += "<td class='event'>" + count;
         for (let k = 0; k < eventsOnDate.length; k++) {
           const event = eventsOnDate[k];
-          calendar += "<span class='event-text'>" + event.text + "</span><br>";
+          calendar += "<span class='event-text'>" + event.text + "</span>";
         }
         calendar += "</td>";
       } else {
@@ -144,8 +131,6 @@ function hideEventText() {
   const texts = document.querySelectorAll(".event-text");
   texts.forEach(text => {
     text.style.display = "none";
-    // text.style.width = "0";
-    // text.style.height = "0";
   });
 }
 

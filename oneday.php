@@ -9,12 +9,6 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
 <!DOCTYPE html>
 <html lang="ja">
     <head>
-        <!-- <style>
-            <?php if (isset($_SESSION['windowVisible']) && $_SESSION['windowVisible'] === false): ?>
-                #window { display: none; }
-                #window { display: inline-block; }
-            <?php endif; ?>
-        </style> -->
         <meta charset="UTF-8">
         <link rel="stylesheet" href="/webapp/oneday.css">
         <title>One Day</title>
@@ -56,28 +50,12 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
             </div>
         </div>
         <div id="reason">
-            <!-- <p>私はなんとなく過ごしている日常をもっと豊かに、と思いこのアプリを開発しました。<br>
+            <p>私はなんとなく過ごしている日常をもっと豊かに、と思いこのアプリを開発しました。<br>
                 忙しなく過ぎていく毎日の中で、１日を振り返る時間を作ってみてもいいかもしれません。<br>
-                辛いこと、苦しいことがあった際はぜひこのアプリを使ってみてください。<br>
+                その日にあった嬉しかったことを記録してみてください。そしてカレンダーで確認してみましょう！<br>
                 角度を変えて日常を見つめることで、よりあなたの世界は明るくなるでしょう。
-            </p> -->
+            </p>
         </div>
     </div>
-    <script>
-        // PHPセッションからwindowVisibleの値を取得
-        <?php $windowVisible = isset($_SESSION['windowVisible']) ? $_SESSION['windowVisible'] : true; ?>
-
-        // windowVisibleがfalseの場合、#windowを非表示にして#windowを表示する
-        if (<?php echo $windowVisible ? 'true' : 'false'; ?> === false) {
-            document.addEventListener('DOMContentLoaded', function() {
-                var windowElem = document.getElementById('window');
-                var windowCElem = document.getElementById('window');
-
-                windowElem.style.display = 'none';
-                windowCElem.style.display = 'inline-block';
-            });
-        }
-    </script>   
-    <script src="/webapp/oneday.js"></script>
 </body>
 </html>

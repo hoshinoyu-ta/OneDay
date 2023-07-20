@@ -63,14 +63,13 @@ if ($_SERVER['REQUEST_METHOD']==='POST'){
             <div id="textarea">
                 <form action="" method="post">
                     <p>日付</p>
-                    <textarea id="write" cols="70" rows="16" name="text"><?php echo h($form['text']); ?></textarea>
+                    <textarea id="write" cols="50" rows="9" name="text"><?php echo h($form['text']); ?></textarea>
                     <?php if(isset($error['text']) && $error['text']==='blank'):?>
                     <p class="memo">一言でもいいので本日の記録をしてみてください！</p>
                 <?php endif; ?>
                 <div>
                     <input type="submit" value="登録" id="register" onclick="showConfirmation()">
                 </div>
-                    
                 </form>
             </div>
     <script src="/webapp/diary/diary.js"></script>
