@@ -3,7 +3,6 @@
     @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
     /*全体*/
-
     #title{
         margin-top: 0px;
         margin-bottom: 0px;
@@ -74,9 +73,6 @@
         background-color: #D65E72;
         color: #fff;
     }
-    /* td {
-        display: table-cell;
-    } */
     /*ボタン*/
     #next-prev-button button:hover{
     background-color:black;
@@ -104,7 +100,6 @@
         cursor: pointer;
     }
     .event-text {
-        /* display: none; */
         font-size: small;
         color: black;
     }

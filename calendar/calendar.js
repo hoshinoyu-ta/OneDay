@@ -82,10 +82,10 @@ for (let i = 0; i < row; i++) {
       });
       // 当日のイベント
       if (year == today.getFullYear() && month == today.getMonth() && count == today.getDate()) {
-        calendar += "<td class='today'>" + count + "<br>";
+        calendar += "<td class='today'>" + count;
         for (let k = 0; k < eventsOnDate.length; k++) {
           const event = eventsOnDate[k];
-          calendar += "<span class='event-text'>" + event.text + "</span><br>";
+          calendar += "<span class='event-text'>" + event.text + "</span>";
         }
         calendar += "</td>";
       } else if (eventsOnDate.length > 0) {
