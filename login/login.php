@@ -67,7 +67,7 @@
                         <input type="text" name="name" value="<?php echo h($name); ?>" placeholder="UserName">
                     </div>
                     <div id="pwd">
-                        <input type="password" name="password" id="" value="<?php echo h($password); ?>" placeholder="password">
+                        <input type="password" name="password" id="" value="<?php echo h($password); ?>" placeholder="Password">
                     </div>
                 <?php if (isset($error['login']) && $error['login'] === 'blank'): ?>    
                     <p class="error">* ユーザー名とパスワードをご記入ください</p>

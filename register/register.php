@@ -73,7 +73,7 @@ if($_SERVER['REQUEST_METHOD']==='POST'){
                     <?php endif; ?>
             </div>
             <div id="pwd">
-                <input type="password" name="password" id="" placeholder="passward" value="<?php echo h($form['password']);?>">
+                <input type="password" name="password" id="" placeholder="Passward" value="<?php echo h($form['password']);?>">
                     <?php if (isset($error['password']) && $error['password']==='blank'): ?>
                         <p class="error">*パスワードを入力してください</p>
                     <?php endif; ?>  
@@ -82,7 +82,7 @@ if($_SERVER['REQUEST_METHOD']==='POST'){
                     <?php endif; ?> 
             </div>
             <div>
-                <input type="email" name="email" id="email" placeholder="e-mail" value="<?php echo h($form['email']);?>">
+                <input type="email" name="email" id="email" placeholder="E-mail" value="<?php echo h($form['email']);?>">
                     <?php if (isset($error['email']) && $error['email']==='blank'): ?>
                         <p class="error">*メールアドレスを入力してください</p>
                     <?php endif; ?>
