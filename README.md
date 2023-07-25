@@ -17,6 +17,36 @@
 ## 実装予定の機能
 トップページの画像をモノクロで採用し、投稿されるたびにトップページのモノクロ画像に色がついていく機能を実装予定です。
 
+## セットアップ
+
+### データベース
+
+db作成
+```SQL
+CREATE DATABASE oneday;
+```
+
+テーブル:「diary」作成	
+```SQL
+    CREATE TABLE diary (
+        id INT PRIMARY KEY,
+        name VARCHAR(255),
+        text TEXT,
+        created TIMESTAMP
+    );
+```
+
+テーブル:「members」作成	
+```SQL
+    CREATE TABLE members (
+        id INT PRIMARY KEY,
+        name VARCHAR(255),
+        password VARCHAR(255),
+        email VARCHAR(255),
+        created TIMESTAMP
+    );
+```
+
 ## 使用技術
 
 * HTML5
