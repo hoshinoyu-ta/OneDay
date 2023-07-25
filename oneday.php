@@ -11,6 +11,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="/webapp/oneday.css">
+        <link rel="icon" href="/webapp/img/favicon.ico">
         <title>One Day</title>
     </head>
 <body>
