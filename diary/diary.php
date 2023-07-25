@@ -53,7 +53,6 @@ if ($_SERVER['REQUEST_METHOD']==='POST'){
         <h1>今日の記録</h1>
             <div id="textarea">
                 <form action="" method="post">
-                    <p>日付</p>
                     <textarea id="write" cols="50" rows="9" name="text"><?php echo h($form['text']); ?></textarea>
                     <?php if(isset($error['text']) && $error['text']==='blank'):?>
                     <p class="memo">一言でもいいので本日の記録をしてみてください！</p>
