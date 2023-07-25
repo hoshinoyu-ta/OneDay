@@ -40,3 +40,5 @@
 ![diary-image](readme-img/diary-image.png)
 
 ![calendar-image](readme-img/calendar-image.png)
+
+![about-image](readme-img/about-image.png)
