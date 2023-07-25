@@ -1,6 +1,6 @@
 # アプリ名：OneDay
 
-![oneday-image](readme-img/oneday-img.png)
+![oneday-image](readme-img/oneday-image.png)
 ## 概要
 
 日常に起こったことを記録していくアプリです。<br>
