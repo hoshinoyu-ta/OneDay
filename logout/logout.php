@@ -36,16 +36,8 @@
                 <img src="/webapp/img/person2.png" alt="人" id="person2">
                 <img src="/webapp/img/sofa1.png" id="sofa1">
                 <img src="/webapp/img/person1.png" alt="人" id="person1">
-                <img src="/webapp/img/tv.png" alt="テレビ" id="tv">
+                <a href="/webapp/about/about.html"><img src="/webapp/img/tv.png" alt="テレビ" id="tv"></a>
             </div>
-        </div>
-
-        <div id="reason">
-            <p>私はなんとなく過ごしている日常をもっと豊かに、と思いこのアプリを開発しました。<br>
-                忙しなく過ぎていく毎日の中で、１日を振り返る時間を作ってみてもいいかもしれません。<br>
-                その日にあった嬉しかったことを記録してみてください。そしてカレンダーで確認してみましょう！<br>
-                角度を変えて日常を見つめることで、よりあなたの世界は明るくなるでしょう。
-            </p>
         </div>
     </div>
     <script src="/webapp/oneday.js"></script>

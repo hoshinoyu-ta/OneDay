@@ -53,7 +53,10 @@ img{
     width: 7%;
     margin-left: 4%;
     margin-top: 3%;
-    
+    animation-name: about;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-delay: 0s;
 }
 /* 照明 */
 #light{
@@ -73,13 +76,25 @@ img{
 /* DIV2 */
 #leaf1{
     width: 5%;
+    margin-left: 20px;
 }
 #leaf2{
     width: 7%;
 }
 #cloud{
-    width: 12%;
+    width: 10%;
     margin-bottom: 20%;
+    animation-name: cloud;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-delay: 0s;
+}
+@keyframes cloud{
+    0%{transform: rotateZ(0deg)}
+    25%{transform: rotateZ(-4deg)}
+    50%{transform: rotateZ(0deg)}
+    75%{transform: rotateZ(4deg)}
+    100%{transform: rotateZ(0deg)}
 }
 /* 人 */
 #person1,#person2{
@@ -91,6 +106,17 @@ img{
 }
 #tv{
     width: 13%;
+    animation-name: about;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-delay: 0s;
+}
+@keyframes about{
+    0%{transform: rotateZ(0deg)}
+    25%{transform: rotateZ(4deg)}
+    50%{transform: rotateZ(0deg)}
+    75%{transform: rotateZ(-4deg)}
+    100%{transform: rotateZ(0deg)}
 }
 /* 記録 */
 #event{
@@ -114,16 +140,12 @@ img{
     transform: scale(1.3,1.3);
     transition: 0.2s;
 }
-#calendar:hover,#cloud:hover{
+#calendar:hover,#cloud:hover,#tv:hover{
     animation-name: shake;
     animation-delay: 0s;
     animation-duration: 1s;
     animation-iteration-count: infinite;
 }
-#calendar:hover ~ #text{
-    animation-name: text;
-}
-/* アニメーション */
 @keyframes shake{
     0% {transform: translate(0px, 0px) rotateZ(0deg)}
     25% {transform: translate(10px, 10px) rotateZ(1deg)}
@@ -131,17 +153,4 @@ img{
     75% {transform: translate(10px, 10px) rotateZ(-10deg)}
     100% {transform: translate(0px, 0px) rotateZ(0deg)}
 }
-@keyframes text{
-    0%{opacity: 0;}
-    50%{opacity: 0.5;}
-    100%{opacity: 1;}
-}
-/* 背景文 */
-#reason{
-    margin-left: auto;
-    margin-left: auto;
-    margin-top: 70px;
-    margin-bottom: 100px;
-    text-align: center;
-    font-family: 'Zen Kurenaido', sans-serif;
-}
+
