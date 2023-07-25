@@ -1,6 +1,5 @@
 <?php
 session_start();
-
 if(isset($_GET['action'])&& $_GET['action']=== 'rewrite' && isset($_SESSION['form'])){
     $form = $_SESSION['form'];
 }else{
@@ -11,11 +10,8 @@ if(isset($_GET['action'])&& $_GET['action']=== 'rewrite' && isset($_SESSION['for
         'password'=>'',
     ];
 }
-
 $error=[];
-
 require('../library.php');
-
 // フォームが送信された時
 if($_SERVER['REQUEST_METHOD']==='POST'){
     $form['name']=filter_input(INPUT_POST,'name',FILTER_SANITIZE_STRING);
@@ -23,13 +19,11 @@ if($_SERVER['REQUEST_METHOD']==='POST'){
             // エラーが起こったことだけを記録
             $error['name']='blank';
         }
-
     $form['email']=filter_input(INPUT_POST,'email',FILTER_SANITIZE_EMAIL);
         if($form['email'] === ''){
             // エラーが起こったことだけを記録
             $error['email']='blank';
         }
-    
         $form['password']=filter_input(INPUT_POST,'password',FILTER_SANITIZE_EMAIL);
         if($form['password'] === ''){
             // エラーが起こったことだけを記録
@@ -37,7 +31,6 @@ if($_SERVER['REQUEST_METHOD']==='POST'){
         }elseif (strlen($form['password']) <4 ){
             $error['password']='length';
         }
-
         // この時点でプログラムが終わる
         if(empty($error)){
             $_SESSION['form']=$form;
@@ -46,25 +39,22 @@ if($_SERVER['REQUEST_METHOD']==='POST'){
         }
 }
 ?>
-
-
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/webapp/register/register.css">
+    <link rel="stylesheet" href="../register/register.css">
     <title>新規登録</title>
 </head>
 <body>
     <header>
         <h1 id="title">OneDay</h1>
-        <a href="/webapp/oneday.php"><button id="home">ホーム</button></a>
+        <a href="../oneday.php"><button id="home">ホーム</button></a>
     </header>
         <h1>新規登録</h1>
         <form action="" method="post">
             <div>
-                <img src="/webapp/img/user.png" alt="" id="user" >
+                <img src="../img/user.png" alt="" id="user" >
             </div>
             <div id="text">
                 <input type="text" name="name" placeholder="UserName" value="<?php echo h($form['name']);?>">

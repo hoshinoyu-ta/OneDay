@@ -4,12 +4,10 @@
     $error=[];
     $name='';
     $password='';
-
     if ($_SERVER['REQUEST_METHOD']==='POST'){
         
         $name =filter_input(INPUT_POST,'name',FILTER_SANITIZE_STRING);
         $password =filter_input(INPUT_POST,'password',FILTER_SANITIZE_STRING);
-
         // ボタンが空だったら
         if ($name === '' || $password === '') {
             $error['login'] = 'blank';
@@ -29,7 +27,6 @@
         // 結果を受け取る
         $stmt->bind_result($id, $name, $hash);
         $stmt->fetch();
-
         if (password_verify($password, $hash)) {
             // ログイン成功
             // sessionIDを生成しなおす
@@ -45,23 +42,22 @@
     }
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/webapp/login/login.css">
+    <link rel="stylesheet" href="../login/login.css">
     <title>ログイン</title>
 </head>
 <body>
     <header>
         <h1 id="title">OneDay</h1>
-        <a href="/webapp/oneday.php"><button id="home">ホーム</button></a>
+        <a href="../oneday.php"><button id="home">ホーム</button></a>
     </header>
     <h1>ログイン</h1>
         <form action="" method="post">
                     <div>
-                        <img src="/webapp/img/user.png" alt="" id="user" >
+                        <img src="../img/user.png" alt="" id="user" >
                     </div>
                     <div id="text">
                         <input type="text" name="name" value="<?php echo h($name); ?>" placeholder="UserName">

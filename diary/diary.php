@@ -4,14 +4,11 @@ session_start();
 session_regenerate_id();
 // $_SESSION['id']=$id;
 $name=$_SESSION['name'];
-
-
 // db接続情報
 $servername = "localhost";
 $username = "root";
 $password = "root";
 $dbname = "oneday";
-
 $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
@@ -22,10 +19,6 @@ $form=[
     'text'=>''
 ];
 $error=[];
-
-// $name = $_POST["name"];
-// $text = h($_POST["text"]);
-
 // ボタン押された時
 if ($_SERVER['REQUEST_METHOD']==='POST'){
     $form['text']=filter_input(INPUT_POST,'text',FILTER_SANITIZE_STRING);
@@ -34,14 +27,12 @@ if ($_SERVER['REQUEST_METHOD']==='POST'){
     }else{
         $text = h($form['text']);
         $stmt = $conn->prepare("INSERT INTO diary (name, text) VALUES (?, ?)");
-
         // エラーメッセージを確認する
         if (!$stmt) {
             die("Error: " . $conn->error);
         }        
         $stmt->bind_param("ss", $name, $text);
         $stmt->execute();
-
         header('Location:../oneday.php');
             exit();
     }
@@ -51,13 +42,13 @@ if ($_SERVER['REQUEST_METHOD']==='POST'){
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/webapp/diary/diary.css">
+    <link rel="stylesheet" href="../diary/diary.css">
     <title>Diary</title>
 </head>
 <body>
     <header>
         <h1 id="title">OneDay</h1>
-        <a href="/webapp/oneday.php"><button id="home">ホーム</button></a>
+        <a href="../oneday.php"><button id="home">ホーム</button></a>
     </header>
         <h1>今日の記録</h1>
             <div id="textarea">
@@ -72,6 +63,5 @@ if ($_SERVER['REQUEST_METHOD']==='POST'){
                 </div>
                 </form>
             </div>
-    <script src="/webapp/diary/diary.js"></script>
 </body>
 </html>
