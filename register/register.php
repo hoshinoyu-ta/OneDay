@@ -80,8 +80,6 @@ if($_SERVER['REQUEST_METHOD']==='POST'){
             <div id="submit">
                 <input type="submit" value="登録" id="submit-i">
             </div>
-            <div></div>
-            <div></div>
         </from>
 </body>
 </html>

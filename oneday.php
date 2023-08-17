@@ -39,7 +39,6 @@ if (isset($_SESSION['id']) && isset($_SESSION['name'])) {
                 <img src="img/clock.png" alt="時計" id="clock">
                 <img src="img/others1.png" alt="" id="wall1">
             </div>
-            </div>
             <div id="img2">
                 <img src="img/leaf1.png" alt="" id="leaf1">
                 <img src="img/leaf2.png" alt="" id="leaf2">
