@@ -30,7 +30,7 @@ function next() {
 function showProcess(date) {
   let year = date.getFullYear();
   let month = date.getMonth();
-  document.querySelector('#header').innerHTML = year + "年 " + (month + 1) + "月";
+  document.querySelector('#header').innerHTML = year + "." + (month + 1);
 
   let calendar = createProcess(year, month);
   document.querySelector('#calendar').innerHTML = calendar;

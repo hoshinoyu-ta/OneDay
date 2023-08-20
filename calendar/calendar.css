@@ -12,8 +12,9 @@
 }
 #header{
     font-size: 120%;
+    font-family: 'Amatic SC', cursive;
 }
-#home,#prev,#next{
+#home{
     width: 10%;
     padding: 1%;
     margin-top: 3%;
@@ -24,14 +25,23 @@
     border: none;
     cursor: pointer;
 }
-#home:hover{
+#prev,#next{
+    width: 6%;
+    padding: 0.5%;
+    margin-left: 3%;
+    font-size: 15px;
+    font-family: 'Zen Kurenaido', sans-serif;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+#home:hover,#prev:hover,#next:hover{
     background-color: rgb(63, 60, 60);
     color: white;
 }
 .wrapper{
     text-align: center;
     font-size: 3vw;
-    color: #7d7272;
     font-family: 'Zen Kurenaido', sans-serif;
 }
 /*カレンダー*/
