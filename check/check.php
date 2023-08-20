@@ -21,6 +21,9 @@
             die($db->error);
         }
         unset($_SESSION['form']);
+        $last_id = $db->insert_id;
+        $_SESSION['id'] = $last_id;
+        $_SESSION['name'] = $form['name'];
         header('Location:../oneday.php');
     }   
 ?>
