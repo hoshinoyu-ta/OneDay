@@ -43,6 +43,8 @@ h1{
 #write{
     border-radius: 30px;
     padding: 50px;
+    outline: none;
+    background-color: rgb(241, 239, 239);
 }
 #register{
     margin: 50px auto 0 auto;
@@ -57,9 +59,7 @@ h1{
 .memo{
     margin-left: auto;
     margin-right: auto;
-    background-color: lightgray;
     font-family: 'Zen Kurenaido', sans-serif;
-    border-radius: 15px;
     width: 55%;
 }
 
