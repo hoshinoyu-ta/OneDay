@@ -34,7 +34,7 @@ if($_SERVER['REQUEST_METHOD']==='POST'){
         // この時点でプログラムが終わる
         if(empty($error)){
             $_SESSION['form']=$form;
-            header('Location:check.php');
+            header('Location:../check/check.php');
             exit();
         }
 }
