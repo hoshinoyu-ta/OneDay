@@ -41,9 +41,11 @@ h2{
     margin-bottom: 100px;
     text-align: center;
     font-family: 'Zen Kurenaido', sans-serif;
+    font-size:.9em;
 }
 #usage{
     font-family: 'Zen Kurenaido', sans-serif;
+    font-size:.9em;
 }
 ul{
     text-align: center;

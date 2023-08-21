@@ -76,6 +76,7 @@ if($_SERVER['REQUEST_METHOD']==='POST'){
                     <?php if (isset($error['email']) && $error['email']==='blank'): ?>
                         <p class="error">*メールアドレスを入力してください</p>
                     <?php endif; ?>
+                    <p>*このメールアドレスは既に使用されています</p>
             </div>
             <div id="submit">
                 <input type="submit" value="登録" id="submit-i">
