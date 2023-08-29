@@ -89,6 +89,8 @@ CREATE DATABASE oneday;
 * 投稿
 * 投稿確認
 
+![oneday-image](readme-img/oneday-image-login.png)
+
 ![register-image](readme-img/register-image.png)
 
 ![login-image](readme-img/login-image.png)

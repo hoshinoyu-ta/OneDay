@@ -24,7 +24,7 @@ if($_SERVER['REQUEST_METHOD']==='POST'){
             // エラーが起こったことだけを記録
             $error['email']='blank';
         }
-        $form['password']=filter_input(INPUT_POST,'password',FILTER_SANITIZE_EMAIL);
+    $form['password']=filter_input(INPUT_POST,'password',FILTER_SANITIZE_EMAIL);
         if($form['password'] === ''){
             // エラーが起こったことだけを記録
             $error['password']='blank';
